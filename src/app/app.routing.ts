@@ -17,7 +17,7 @@ const appRoutes: Routes = [
     component: AdminComponent
   },
   {
-    path: 'rower-detail',
+    path: 'rowers/:id',
     component: RowerDetailComponent
   },
   {
