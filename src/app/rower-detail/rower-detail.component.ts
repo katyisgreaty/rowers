@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { Location } from '@angular/common';
+import { Rower } from '../rower.model';
 
 @Component({
   selector: 'app-rower-detail',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RowerDetailComponent implements OnInit {
 
-  constructor() { }
+  rowerId: number = null;
+
+  constructor(private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
+    this.route.params.forEach((urlParameters) => {
+      this.rowerId = parseInt(urlParameters['id']);
+    });
   }
 
 }
