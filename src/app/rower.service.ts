@@ -24,4 +24,12 @@ export class RowerService {
     return this.angularFire.database.object('rowers/' + rowerId);
   }
 
+  updateRower(localUpdatedRower){
+    var rowerEntryInFirebase = this.getRowerById(localUpdatedRower.$key);
+    rowerEntryInFirebase.update({name: localUpdatedRower.name,
+                                seat: localUpdatedRower.seat,
+                                bio: localUpdatedRower.bio,
+                                height: localUpdatedRower.height});
+  }
+
 }
