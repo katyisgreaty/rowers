@@ -1,6 +1,7 @@
+
 .list {
   margin-left: 25%;
-  padding-bottom: 100%;
+  padding-bottom: 60%;
 }
 
 .panel-body {
@@ -31,4 +32,24 @@ h3 {
   font-size: 100px;
   color: white;
   margin-top: 100px;
+}
+
+img {
+  height: 40px;
+  margin-left: 5%;
+}
+
+img.port {
+  margin-left: 30%;
+}
+
+img.starboard {
+  height: 40px;
+  margin-left: 2%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }

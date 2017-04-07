@@ -12,7 +12,7 @@
 <div class="list col-md-6">
   <div *ngFor="let rower of rowers | async | seatFilter:filterByFour" class="panel panel-default">
     <div class="panel-body" *ngIf="rower.seat === '0'">
-      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Coxswain</h3>
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Coxswain <img src="../../assets/megaphone.png" alt="megaphone" /></h3>
       <div *ngIf="currentRoute === '/admin'">
         <p>Bio: {{rower.bio}}</p>
         <p>Height: {{rower.height}}"</p>
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="panel-body" *ngIf="rower.seat === '8'">
-      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Stroke Seat</h3>
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Stroke Seat <img class="port" src="../../assets/oar.png" alt="oar" /></h3>
       <div *ngIf="currentRoute === '/admin'">
         <p>Bio: {{rower.bio}}</p>
         <p>Height: {{rower.height}}"</p>
@@ -28,7 +28,7 @@
       </div>
     </div>
     <div class="panel-body" *ngIf="rower.seat === '1'">
-      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Bow Seat</h3>
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Bow Seat <img class="starboard" src="../../assets/oar.png" alt="oar" /></h3>
       <div *ngIf="currentRoute === '/admin'">
         <p>Bio: {{rower.bio}}</p>
         <p>Height: {{rower.height}}"</p>
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="panel-body" *ngIf="rower.seat === '' ||rower.seat === '4' || rower.seat === '2' || rower.seat === '3' || rower.seat === '5' || rower.seat === '6' || rower.seat === '7' || rower.seat>8">
-      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - {{rower.seat}} Seat</h3>
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - {{rower.seat}} Seat <img *ngIf="rower.seat === '3' || rower.seat=== '5' || rower.seat==='7'" class="starboard" src="../../assets/oar.png" alt="oar-starboard" /><img *ngIf="rower.seat === '2' || rower.seat=== '4' || rower.seat==='6'" class="port" src="../../assets/oar.png" alt="oar-port" /></h3>
       <div *ngIf="currentRoute === '/admin'">
         <p>Bio: {{rower.bio}}</p>
         <p>Height: {{rower.height}}"</p>
