@@ -13,6 +13,7 @@ import { AdminComponent } from './admin/admin.component';
 import { UserComponent } from './user/user.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+import { SeatFilterPipe } from './seat-filter.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     RowerDetailComponent,
     EditRowerComponent,
     AdminComponent,
-    UserComponent
+    UserComponent,
+    SeatFilterPipe
   ],
   imports: [
     BrowserModule,

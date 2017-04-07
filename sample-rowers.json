@@ -1,54 +1,54 @@
 { "rowers": [{
     "name": "Zoe Chalker",
-    "seat": 4,
+    "seat": "4",
     "bio": "Zoe has been rowing since she turned 12, and she loves the calm power of the sport. She is a verified powerhouse in the middle of the boat, helping the EBRC win races from the 4 seat.",
     "height": "5'10",
     "id": "1"
     }, {
     "name": "Elizabeth Stein",
-    "seat": 5,
+    "seat": "5",
     "bio": "Elizabeth has only been rowing for 3 years, but her technique is improving and her erg times prove that she belongs in the varsity boat.",
     "height": "5'11",
     "id": "2"
     }, {
     "name": "Catherine Waller",
-    "seat": 1,
+    "seat": "1",
     "bio": "Catherine, or Cat, is a happy-go-lucky rower who brings a sense of fun to the boat. She loves calm days on the water and being the first one to cross the finish line in a race!",
     "height": "5'7",
     "id": "3"
     },{
     "name": "Tara Williams",
-    "seat": 7,
+    "seat": "7",
     "bio": "Tara is truly a rower with heart. Always there to give a kind word to a boatmate after a tough race or congratulations for a PR, she is an asset to the team",
     "height": "6'1",
     "id": "4"
       },{
     "name": "Jane Bodin",
-    "seat": 8,
+    "seat": "8",
     "bio": "Jane is what everyone hopes for in a stroke seat: confident, powerful, and with an intuition for stroke-rate. She is a true leader both on and off the water.",
     "height": "5'9",
     "id": "5"
       },{
     "name": "Elise Baker",
-    "seat": 2,
+    "seat": "2",
     "bio": "Elise has been rowing for 5 years now, and her confidence shows. She has beautiful technique and is always quick to give others a hand.",
     "height": "5'8",
     "id": "6"
     },{
     "name": "Sandra Abrams",
-    "seat": 3,
+    "seat": "3",
     "bio": "Sandra loves any day she can spent out on the water, whether it's in the 8 or out on her sailboat. She is thrilled to be a part of the EBRC!",
     "height": "6'0",
     "id": "7"
     },{
     "name": "Alex Fenley",
-    "seat": 6,
+    "seat": "6",
     "bio": "Alex is a determined rower with several junior championships under her belt. She is the back-up stroke seat rower, and a force to be reckoned with.",
     "height": "5'11",
     "id": "8"
       },{
     "name": "Lydia Paulson",
-    "seat": 0,
+    "seat": "0",
     "bio": "The only thing Lydia loves more than coxing the Women's 8 is her dog, Mr. Bojangles. He is always at races to cheer her on, while she motivates and inspires her boat across the finish line.",
     "height": "5'3",
     "id": "9"

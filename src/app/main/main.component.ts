@@ -17,8 +17,14 @@ export class MainComponent implements OnInit {
 
   constructor(private router: Router, private rowerService: RowerService){}
 
+  filterByFour: string = "allRowers";
+
   ngOnInit() {
     this.rowers = this.rowerService.getRowers();
+  }
+
+  onChange(optionFromMenu){
+    this.filterByFour = optionFromMenu;
   }
 
   goToDetailPage(clickedRower) {

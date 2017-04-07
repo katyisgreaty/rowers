@@ -5,7 +5,7 @@
 <br>
 
 <label>Updated Rower Seat Number:</label>
-<input type="number" [(ngModel)]="selectedRower.seat">
+<input [(ngModel)]="selectedRower.seat">
 <br>
 
 <label>Updated Rower Bio:</label>
@@ -15,4 +15,7 @@
 <label>Updated Rower Height:</label>
 <input [(ngModel)]="selectedRower.height">
 
-<button (click)="beginUpdatingRower(selectedRower)">Update</button>
+<button *ngIf="selectedRower.seat<=8"(click)="beginUpdatingRower(selectedRower)">Update</button>
+<button *ngIf="selectedRower.seat>8" (click)="invalidSeatNumber()">Update</button>
+<hr>
+<button (click)="beginDeletingRower(selectedRower)">Delete this Rower</button>

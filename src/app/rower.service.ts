@@ -32,4 +32,9 @@ export class RowerService {
                                 height: localUpdatedRower.height});
   }
 
+  deleteRower(localRowerToDelete){
+    var rowerEntryInFirebase = this.getRowerById(localRowerToDelete.$key);
+    rowerEntryInFirebase.remove();
+  }
+
 }

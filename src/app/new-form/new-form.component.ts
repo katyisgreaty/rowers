@@ -16,7 +16,7 @@ export class NewFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, seat: number, bio: string, height: string) {
+  submitForm(name: string, seat: string, bio: string, height: string) {
     var newRower: Rower = new Rower(name, seat, bio, height);
     this.rowerService.addRower(newRower);
   }

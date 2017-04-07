@@ -19,4 +19,14 @@ export class EditRowerComponent implements OnInit {
     this.rowerService.updateRower(rowerToUpdate);
   }
 
+  beginDeletingRower(rowerToDelete){
+    if(confirm("Are you sure you want to delete this rower?")){
+      this.rowerService.deleteRower(rowerToDelete);
+    }
+  }
+
+  invalidSeatNumber(){
+    alert("The seat number must be between 0 and 8");
+  }
+
 }
