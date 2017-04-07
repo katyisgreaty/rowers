@@ -25,7 +25,7 @@ export class RowerDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.rowerId = parseInt(urlParameters['id']);
     });
-    this.rowerToDisplay = this.rowerService.getRowerById(this.rowerId);
+    // this.rowerToDisplay = this.rowerService.getRowerById(this.rowerId);
   }
 
 }

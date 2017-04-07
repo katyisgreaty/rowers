@@ -21,7 +21,7 @@ export class MainComponent implements OnInit {
   }
 
   goToDetailPage(clickedRower: Rower) {
-    this.router.navigate(['rowers', clickedRower.id]);
+    // this.router.navigate(['rowers', clickedRower.id]);
   };
 
 }
