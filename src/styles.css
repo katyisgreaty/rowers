@@ -4,19 +4,22 @@
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #3e4860;
+  background-color: rgba(62, 72, 96, 0.8);
   padding: 15px;
   color: white;
 }
 
 nav {
-  background-color: #3e4860 !important;
+  background-color: rgba(62, 72, 96, 0.8) !important;
 }
 
 .navbar-default {
+  position: fixed !important;
+  width: 100% !important;
   border-width: 0 !important;
   border-radius: 0 !important;
   height: 100px;
+  z-index: 1;
 }
 
 h1 {
