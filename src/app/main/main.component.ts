@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Rower } from '../rower.model';
 import { Router } from '@angular/router';
 import { RowerService } from '../rower.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-main',
@@ -11,7 +12,7 @@ import { RowerService } from '../rower.service';
 })
 
 export class MainComponent implements OnInit {
-  rowers: Rower[];
+  rowers: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private rowerService: RowerService){}
 
