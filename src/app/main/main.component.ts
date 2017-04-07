@@ -20,8 +20,8 @@ export class MainComponent implements OnInit {
     this.rowers = this.rowerService.getRowers();
   }
 
-  goToDetailPage(clickedRower: Rower) {
-    // this.router.navigate(['rowers', clickedRower.id]);
+  goToDetailPage(clickedRower) {
+    this.router.navigate(['rowers', clickedRower.$key]);
   };
 
 }

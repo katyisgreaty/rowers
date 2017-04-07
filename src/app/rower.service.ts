@@ -20,12 +20,8 @@ export class RowerService {
     this.rowers.push(newRower);
   }
 
-  getRowerById(rowerId: number) {
-    // for (var i = 0; i<=ROWERS.length - 1; i++) {
-    //   if (ROWERS[i].id === rowerId) {
-    //     return ROWERS[i];
-    //   }
-    // }
+  getRowerById(rowerId: string) {
+    return this.angularFire.database.object('rowers/' + rowerId);
   }
 
 }
