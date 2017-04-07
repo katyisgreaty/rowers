@@ -1,6 +1,9 @@
-<div>
-  <h3>{{(rowerToDisplay | async)?.name}}</h3>
-  <h4>{{(rowerToDisplay | async)?.seat}} Seat</h4>
-  <h4>Height: {{(rowerToDisplay | async)?.height}}"</h4>
-  <h4>{{(rowerToDisplay | async)?.bio}}</h4>
+<div class="rower">
+  <div class="rower-content">
+      <h3>{{(rowerToDisplay | async)?.name}}</h3>
+      <h4>Position: {{(rowerToDisplay | async)?.seat}} Seat</h4>
+      <h4>Height: {{(rowerToDisplay | async)?.height}}"</h4>
+    <h4>Bio:<br>{{(rowerToDisplay | async)?.bio}}</h4>
+
+  </div>
 </div>

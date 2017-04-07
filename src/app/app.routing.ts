@@ -6,6 +6,7 @@ import { RowerDetailComponent } from './rower-detail/rower-detail.component';
 import { UserComponent } from './user/user.component';
 import { NewFormComponent } from './new-form/new-form.component';
 import { EditRowerComponent } from './edit-rower/edit-rower.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ const appRoutes: Routes = [
   {
     path: 'edit-rower',
     component: EditRowerComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 

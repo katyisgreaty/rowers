@@ -9,3 +9,16 @@
 .html {
   min-height: 100vh;
 }
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+.navlinks {
+  margin-right: 2%;
+  padding-top: 50px;
+}

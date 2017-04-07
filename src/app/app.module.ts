@@ -14,6 +14,7 @@ import { UserComponent } from './user/user.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { SeatFilterPipe } from './seat-filter.pipe';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     EditRowerComponent,
     AdminComponent,
     UserComponent,
-    SeatFilterPipe
+    SeatFilterPipe,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

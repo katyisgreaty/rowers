@@ -9,6 +9,20 @@
   color: white;
 }
 
+nav {
+  background-color: #3e4860 !important;
+}
+
+.navbar-default {
+  border-width: 0 !important;
+  border-radius: 0 !important;
+  height: 100px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
 a.text-muted {
   color: white;
   font-size: 20px;
