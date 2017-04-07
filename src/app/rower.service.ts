@@ -5,7 +5,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Injectable()
 export class RowerService {
+
   rowers: FirebaseListObservable<any[]>;
+
   constructor(private angularFire: AngularFire) {
     this.rowers = angularFire.database.list('rowers');
   }
@@ -14,12 +16,16 @@ export class RowerService {
     return this.rowers;
   }
 
+  addRower(newRower: Rower) {
+    this.rowers.push(newRower);
+  }
+
   getRowerById(rowerId: number) {
-    for (var i = 0; i<=ROWERS.length - 1; i++) {
-      if (ROWERS[i].id === rowerId) {
-        return ROWERS[i];
-      }
-    }
+    // for (var i = 0; i<=ROWERS.length - 1; i++) {
+    //   if (ROWERS[i].id === rowerId) {
+    //     return ROWERS[i];
+    //   }
+    // }
   }
 
 }

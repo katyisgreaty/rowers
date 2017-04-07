@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, FirebaseObjectObservable } from 'angularfire2';
+import { RowerService } from '../rower.service';
 
 @Component({
   selector: 'app-admin',
