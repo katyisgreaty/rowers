@@ -1,43 +1,47 @@
-<h3>Women's 8</h3>
+<h1 class="title">Women's 8</h1>
 
-<select (change)="onChange($event.target.value)">
+<select class="dropdown" (change)="onChange($event.target.value)">
   <option value="allRowers" selected="selected">View All Rowers</option>
   <option value="bowFour">View Bow 4</option>
   <option value="sternFour">View Stern 4</option>
   <option value="coxswains">View Coxswains</option>
 </select>
+<br>
+<br>
 
-<div *ngFor="let rower of rowers | async | seatFilter:filterByFour" class="panel panel-default">
-  <div class="panel-body" *ngIf="rower.seat === '0'">
-    <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Coxswain</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <p>Bio: {{rower.bio}}</p>
-      <p>Height: {{rower.height}}"</p>
-      <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+<div class="list col-md-6">
+  <div *ngFor="let rower of rowers | async | seatFilter:filterByFour" class="panel panel-default">
+    <div class="panel-body" *ngIf="rower.seat === '0'">
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Coxswain</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <p>Bio: {{rower.bio}}</p>
+        <p>Height: {{rower.height}}"</p>
+        <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+      </div>
     </div>
-  </div>
-  <div class="panel-body" *ngIf="rower.seat === '8'">
-    <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Stroke Seat</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <p>Bio: {{rower.bio}}</p>
-      <p>Height: {{rower.height}}"</p>
-      <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+    <div class="panel-body" *ngIf="rower.seat === '8'">
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Stroke Seat</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <p>Bio: {{rower.bio}}</p>
+        <p>Height: {{rower.height}}"</p>
+        <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+      </div>
     </div>
-  </div>
-  <div class="panel-body" *ngIf="rower.seat === '1'">
-    <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Bow Seat</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <p>Bio: {{rower.bio}}</p>
-      <p>Height: {{rower.height}}"</p>
-      <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+    <div class="panel-body" *ngIf="rower.seat === '1'">
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - Bow Seat</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <p>Bio: {{rower.bio}}</p>
+        <p>Height: {{rower.height}}"</p>
+        <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+      </div>
     </div>
-  </div>
-  <div class="panel-body" *ngIf="rower.seat === '' ||rower.seat === '4' || rower.seat === '2' || rower.seat === '3' || rower.seat === '5' || rower.seat === '6' || rower.seat === '7' || rower.seat>8">
-    <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - {{rower.seat}} Seat</h3>
-    <div *ngIf="currentRoute === '/admin'">
-      <p>Bio: {{rower.bio}}</p>
-      <p>Height: {{rower.height}}"</p>
-      <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+    <div class="panel-body" *ngIf="rower.seat === '' ||rower.seat === '4' || rower.seat === '2' || rower.seat === '3' || rower.seat === '5' || rower.seat === '6' || rower.seat === '7' || rower.seat>8">
+      <h3 (click)="goToDetailPage(rower)"><strong>{{rower.name}}</strong> - {{rower.seat}} Seat</h3>
+      <div *ngIf="currentRoute === '/admin'">
+        <p>Bio: {{rower.bio}}</p>
+        <p>Height: {{rower.height}}"</p>
+        <app-edit-rower [selectedRower]="rower"></app-edit-rower>
+      </div>
     </div>
   </div>
 </div>

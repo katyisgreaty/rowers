@@ -1,0 +1,33 @@
+.list {
+  margin-left: 25%;
+  padding-bottom: 50%;
+}
+
+.panel-body {
+  background-color: white;
+  text-align: center;
+  height: 50px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.dropdown {
+  margin-left: 39%;
+  margin-right: auto;
+  font-size: 20px;
+  height: 50px;
+  width: 250px;
+}
+
+.panel {
+  border-radius: 0 !important;
+  border-width: 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
