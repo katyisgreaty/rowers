@@ -1,6 +1,14 @@
 # Roster
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+#### _Crew Team Roster Web App, 4.7.17_
+
+#### By _**Katy Daviscourt**_
+
+## Description
+
+_Use Angular2 to make a crew team roster webpage with full CRUD functionality._
+
+## Setup/Installation Requirements
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -29,3 +37,21 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Support and contact details
+
+_For questions contact Katy at katy.daviscourt@gmail.com_
+
+## Technologies Used
+
+_C#, Nancy_
+
+### License
+
+*Under MIT License*
+
+Copyright (c) 2017 **_Katy Daviscourt_**
+
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+
