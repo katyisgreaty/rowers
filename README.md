@@ -45,7 +45,7 @@ _For questions contact Katy at katy.daviscourt@gmail.com_
 
 ## Technologies Used
 
-_C#, Nancy_
+_Angular2, JavaScript, Typescript, Firebase_
 
 ### License
 
